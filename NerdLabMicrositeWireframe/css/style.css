@@ -1,0 +1,169 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+body {
+  font-family: "open sans";
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+/* SIDEBAR NAVIGATION */
+.sidebar {
+  position: absolute;
+  right: 0;
+}
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  z-index: 999;
+  content: "";
+  color: transparent;
+  font-size: 14px;
+  line-height: 10px;
+  vertical-align: middle;
+  margin: 5px 0 5px 0;
+  font-weight: 300;
+}
+.dot:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+}
+.dot span {
+  margin: 1px 0px 20px -100px;
+  position: relative;
+  top: 0px;
+  left: -21px;
+}
+nav {
+  width: 100px;
+  height: 200px; /*background-color:rgb(240,240,240); border:solid 1px rgb(220,220,220);*/
+  padding: 0 0px;
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translate(0, -50%);
+  z-index: 10000;
+  text-align: right;
+}
+nav ul li a {
+  text-decoration: none;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.name-active {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #ffd95f;
+  text-align: right;
+}
+
+.aboutTitle
+{
+	background: black;
+	color:white;
+	padding-top:50px;
+}
+
+.aboutDesc
+{
+	background: lightgray;
+	padding-right:200px;
+}
+
+
+
+
+
+body{
+	font-family: arial,helvetica;
+	color: #333;
+	color: rgba(0,0,0,0.5);
+}
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+}
+h1{
+	font-size: 6em;
+}
+
+h3
+{
+	background: black;
+	color:white;
+	padding-left:10px;
+}
+
+p{
+	font-size: 1em;
+}
+.intro p{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+.section{
+	text-align:center;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+#section0{
+  background: -webkit-gradient(linear, top left, bottom left, from(#4bbfc3), to(#7baabe));
+  background: -webkit-linear-gradient(#4BBFC3, #7BAABE);
+  background: linear-gradient(#4BBFC3,#7BAABE);
+}
+
+#section2{
+  background: -webkit-gradient(linear, top left, bottom left, from(#969ac6), to(#636F8F));
+  background: -webkit-linear-gradient(#969AC6, #636F8F);
+  background: linear-gradient(#969AC6,#636F8F);
+}
